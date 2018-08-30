@@ -1,0 +1,27 @@
+extends layout
+
+block content
+	section.container
+		include header.jade
+		div.item
+			form.form(method="post" action="/actualizar/#{data[0].movie_id}")
+				fieldset
+					div.container
+						label.item.i-b.v-top.ph3(for="movie_id") IMDB id:
+						input.item.i-b.v-top.ph9.letraBlack#id(type="text", name="id", value="#{data[0].movie_id}", disabled, required)
+						//-cuando se usa el disabled se debe crear un input adicional porque no se pasa el id por el formulario
+						input#movie_id(type="hidden", name="movie_id", value="#{data[0].movie_id}" required)
+					div.container
+						label.item.i-b.v-top.ph3(for="title") Título:
+						input.item.i-b.v-top.ph9.letraBlack#title(type="text", name="title", value="#{data[0].title}" required)
+					div.container
+						label.item.i-b.v-top.ph3(for="release_year") Año:
+						input.item.i-b.v-top.ph9.letraBlack#release_year(type="text", name="release_year", value="#{data[0].release_year}" required)
+					div.container
+						label.item.i-b.v-top.ph3(for="rating") Calificación:
+						input.item.i-b.v-top.ph9.letraBlack#rating(type="text", name="rating", value="#{data[0].rating}" required)
+					div.container
+						label.item.i-b.v-top.ph3(for="image") Poster:
+						input.item.i-b.v-top.ph9.letraBlack#image(type="text", name="image", value="#{data[0].image}" required)
+					div.container
+						input.item.ph4.mauto.button.add(type="submit",value="Editar")

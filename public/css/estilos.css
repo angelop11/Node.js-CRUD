@@ -1,0 +1,80 @@
+html{
+	color: #FFF;
+	background: black;
+}
+
+a{
+	color: #80BD01;
+}
+
+a:hover{
+	color: rgba(128, 189, 1.5);
+}
+
+li{
+	list-style-position: inside;
+}
+fieldset{padding: 1rem; border: medium solid #80BD01;}
+.container{
+	margin: auto;
+	padding: 1rem;
+	width: 80%;
+}
+#logo-node{
+
+	margin: auto;
+	height: 150px;
+	width: 150px;
+
+	background: transparent url(../img/logo.png) no-repeat center;
+	background-size: contain;
+}
+.boton{
+	background-color: #80BD01;
+	font-size: 2rem;
+	border: 0;
+	color: #1D1D1D;
+}
+.logo{
+	display: block;
+	margin: 1rem auto;
+	width:450px;
+	height: 150px;
+	vertical-align: bottom;
+	background: url("../img/logo.png") no-repeat center;
+	background-size: contain; 
+}
+.poster{
+	max-width: 100px;
+}
+.table{
+	width: 100%;
+	color: black;
+}
+.table td, .table th{
+	padding: 1rem;
+}
+.table tr:first-child{
+	background-color: #292623;
+	color: #80BD01;
+}
+.table tr:nth-child(even){background-color: #CCC;}
+.table tr:nth-child(odd):not(:first-child){background-color: #EEE;}
+
+.button{
+	padding: .5rem 1rem;
+	color: #FFF;
+	background-color: #80BD01;
+	cursor: pointer;
+}
+.button:hover{
+	opacity: .75;
+}
+.add{
+	background:#0B0;
+}
+.edit{background-color: #0871B2;}
+.delete{background-color: #D23641;}
+.letraBlack{
+	color: black;
+}

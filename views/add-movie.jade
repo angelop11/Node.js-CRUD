@@ -1,0 +1,26 @@
+extends layout
+
+block content
+	section.container
+		include header
+		//-include header.jade pero no es necesario el .jade
+		div.item
+			form.form(method="post" action="/")
+				fieldset
+					div.container
+						label.item.i-b.v-top.ph3(for="movie_id") IMDB id:
+						input.item.i-b.v-top.ph9.letraBlack#movie_id(type="text", name="movie_id", required)
+					div.container
+						label.item.i-b.v-top.ph3(for="title") Título:
+						input.item.i-b.v-top.ph9.letraBlack#title(type="text", name="title", required)
+					div.container
+						label.item.i-b.v-top.ph3(for="release_year") Año:
+						input.item.i-b.v-top.ph9.letraBlack#release_year(type="text", name="release_year", required)
+					div.container
+						label.item.i-b.v-top.ph3(for="rating") Calificación:
+						input.item.i-b.v-top.ph9.letraBlack#rating(type="text", name="rating", required)
+					div.container
+						label.item.i-b.v-top.ph3(for="image") Poster:
+						input.item.i-b.v-top.ph9.letraBlack#image(type="text", name="image", required)
+					div.container
+						input.item.ph4.mauto.button.add(type="submit",value="Agregar")

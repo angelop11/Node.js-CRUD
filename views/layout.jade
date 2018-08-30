@@ -1,0 +1,17 @@
+doctype html
+html(lang="es")
+	head
+		meta(charset="utf8")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		title=title
+		//-meta(name="description", content="#{description}")
+		//-link(rel="stylesheet", href="./css/responsimple.min.css")
+		//- se quito el . porque toma como referencia la campeta anteior y no la principal
+		link(rel="stylesheet", href="/css/responsimple.min.css")
+		link(rel="stylesheet", href="/css/estilos.css")
+		//-no puse public porque la carpeta es publica y es a la que se
+			redirige cuando salde y es la unica que se muestra por eso
+			se manda directa desde css
+	body
+
+		block content
